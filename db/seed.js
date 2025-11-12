@@ -10,18 +10,18 @@ console.log("🌱 Database seeded.");
 async function seedPlaylists() {
   // TODO
   await db.query(`
-    INSERT INTO playlists (name)
+    INSERT INTO playlists (name, description)
     VALUES
-      ('Aurora Echoes'),
-      ('Velvet Horizon'),
-      ('Solar Mirage'),
-      ('Crimson Reverie'),
-      ('Midnight Drift'),
-      ('Golden Tides'),
-      ('Neon Bloom'),
-      ('Ivory Skyline'),
-      ('Eternal Pulse'),
-      ('Frozen Vale');
+      ('Aurora Echoes', 'blah blah'),
+      ('Velvet Horizon', 'blah blah'),
+      ('Solar Mirage', 'blah blah'),
+      ('Crimson Reverie', 'blah blah'),
+      ('Midnight Drift', 'blah blah'),
+      ('Golden Tides', 'blah blah'),
+      ('Neon Bloom', 'blah blah'),
+      ('Ivory Skyline', 'blah blah'),
+      ('Eternal Pulse', 'blah blah'),
+      ('Frozen Vale', 'blah blah');
   `);
 }
 
